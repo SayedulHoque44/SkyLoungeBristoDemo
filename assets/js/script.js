@@ -39,6 +39,7 @@ function menuContainerData(limit) {
     mainDataArray = setMenu.slice(0, limit);
   } else {
     mainDataArray = setMenu;
+    const showAll = document.getElementById("showAll").classList.add("hidden");
   }
   //   Display Mwnu Data
 
@@ -125,7 +126,7 @@ function catagoriesData(Data, catagoryName) {
 //search process
 const seachInput = document.getElementById("seachInput");
 const searchBtn = document.getElementById("searchBtn");
-searchBtn.addEventListener("click", function () {
+seachInput.addEventListener("change", function () {
   //
   const inputValue = seachInput.value.toLowerCase();
 

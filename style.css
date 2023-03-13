@@ -354,6 +354,7 @@ footer {
 }
 .menu-btn-box {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   padding: 30px;
